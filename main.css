@@ -1,0 +1,71 @@
+/* Start Global Settings */
+
+:root {
+	--first-color: #333A73;
+	--first-alt-color: #092753;
+	--sec-color: #FBA834;
+	--third-color: #387ADF;
+	--fourth-color: #50C4ED;
+	--white: #eeeeee;
+	--black: #252525;
+	--font-main: "Cairo", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+*,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--font-main);
+	direction: rtl;
+	overflow-x: hidden;
+	background-color: var(--white);
+
+}
+
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+	background-color: var(--sec-color);
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+	background: var(--first-color);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+.row {
+	margin: 0;
+}
+
+section {
+	min-height: 100vh;
+}
+
+/* End Global Settings */
