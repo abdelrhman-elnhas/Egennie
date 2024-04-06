@@ -27,47 +27,159 @@
   <body>
 
     <!-- Header Section -->
-    <header class="d-flex justify-content-between">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container d-flex align-items-center justify-content-between gap-5">
-          <a class="navbar-brand" href="#">
-            <img src="images/logoW.png" width="90" alt="Logo">
+		<header class="d-flex flex-column justify-content-center align-items-center w-100">
+			<div class="pre-header d-none d-md-flex justify-content-end align-items-center w-100 ">
+				<div class="container-fluid d-flex align-items-center justify-content-end gap-4">
+					<ul class="d-flex justify-content-center align-items-center gap-4">
+						<li>خليك تاجر</li>
+						<li>تواصل معنا</li>
+						<li>سياسة الاستبدال  و الاسترجاع</li>
+					</ul>
+				</div>
+				
+			</div>
+			<nav class="navBar w-100 d-flex justify-content-evenly align-items-center py-3">
+				<div class="container-fluid d-flex justify-content-center align-items-center gap-4">
+					<div class="cart-navbar col-1 col-md-2 d-flex align-items-center gap-2  position-relative">
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_484)">
+						<path d="M5.95702 25.3681C4.63427 20.0771 3.97289 17.4332 5.36194 15.6541C6.74944 13.875 9.47819 13.875 14.9311 13.875H22.069C27.5234 13.875 30.2491 13.875 31.6381 15.6541C33.0271 17.4316 32.3658 20.0787 31.043 25.3681C30.2013 28.7336 29.7819 30.4155 28.527 31.396C27.2721 32.375 25.5377 32.375 22.069 32.375H14.9311C11.4623 32.375 9.72794 32.375 8.47302 31.396C7.2181 30.4155 6.79723 28.7336 5.95702 25.3681Z" stroke="white" stroke-width="2"/>
+						<path d="M30.0625 14.6458L28.9679 10.6298C28.5455 9.08041 28.3343 8.30649 27.9011 7.7222C27.4691 7.14171 26.8825 6.69453 26.2083 6.43182C25.53 6.16666 24.7283 6.16666 23.125 6.16666M6.9375 14.6458L8.03208 10.6298C8.4545 9.08041 8.66571 8.30649 9.09892 7.7222C9.53086 7.14171 10.1175 6.69453 10.7917 6.43182C11.47 6.16666 12.2717 6.16666 13.875 6.16666" stroke="white" stroke-width="2"/>
+						<path d="M13.875 6.16667C13.875 5.75779 14.0374 5.36566 14.3265 5.07654C14.6157 4.78743 15.0078 4.625 15.4167 4.625H21.5833C21.9922 4.625 22.3843 4.78743 22.6735 5.07654C22.9626 5.36566 23.125 5.75779 23.125 6.16667C23.125 6.57554 22.9626 6.96767 22.6735 7.25679C22.3843 7.54591 21.9922 7.70833 21.5833 7.70833H15.4167C15.0078 7.70833 14.6157 7.54591 14.3265 7.25679C14.0374 6.96767 13.875 6.57554 13.875 6.16667Z" stroke="white" stroke-width="2"/>
+						<circle cx="29.3455" cy="30.5186" r="6.55847" fill="#092753"/>
+						<circle cx="29.3455" cy="30.5186" r="5.5293" fill="#FBA834"/>
+						</g>
+						<defs>
+						<clipPath id="clip0_1_484">
+						<rect width="37" height="37" fill="white"/>
+						</clipPath>
+						</defs>
+					</svg>
+
+					<div class="cart-content d-none d-md-flex flex-column align-items-start justify-content-center">
+						<p class="cart-title m-0 p-0">سلة المشتريات</p>
+						<p class="cart-amount m-0 p-0">200.00 جم</p>
+					</div>
+
+					</div>
+					<div class="user-navbar col-1 col-md-2  d-flex align-items-center gap-2">
+						<svg width="38" height="34" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1_376)">
+							<path d="M26.6143 9.37431C26.614 10.3708 26.4174 11.3574 26.0358 12.2779C25.6541 13.1984 25.0949 14.0347 24.3901 14.7391C23.6852 15.4434 22.8486 16.0021 21.9278 16.3831C21.0071 16.7641 20.0203 16.9601 19.0238 16.9597C17.5231 16.9592 16.0562 16.5137 14.8086 15.6795C13.5611 14.8453 12.5889 13.6599 12.0151 12.2732C11.4412 10.8865 11.2914 9.36078 11.5847 7.88896C11.878 6.41714 12.6011 5.06534 13.6627 4.0045C14.7242 2.94366 16.0765 2.22143 17.5485 1.92914C19.0205 1.63685 20.5462 1.78762 21.9325 2.3624C23.3188 2.93717 24.5036 3.91014 25.3369 5.15825C26.1703 6.40636 26.6148 7.87356 26.6143 9.37431ZM31.6746 37.1858H6.37305V32.1356C6.37305 30.1225 7.17276 28.1918 8.59625 26.7683C10.0197 25.3449 11.9504 24.5451 13.9635 24.5451H24.0842C26.0973 24.5451 28.028 25.3449 29.4514 26.7683C30.8749 28.1918 31.6746 30.1225 31.6746 32.1356V37.1858Z" stroke="white" stroke-width="2" stroke-linecap="square"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_1_376">
+							<rect width="37.9524" height="37.9524" fill="white" transform="translate(0.0476074 0.523804)"/>
+							</clipPath>
+							</defs>
+						</svg>
+							<div class="user-content d-none d-md-flex flex-column align-items-start justify-content-center position-relative">
+							<p class="user-title m-0 p-0">حسابي</p>
+							<p class="user-log m-0 p-0">تسجيل الدخول / انشاء حساب</p>
+						</div>
+
+					</div>
+					<div class="search-navbar col-6 d-flex justify-content-center align-items-center">
+						<form class="search-form d-flex justify-content-center align-items-center w-100">
+							<button class="search-btn p-2">
+								<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M25.2662 24.4221L29.5384 28.8141C29.7376 29.0262 29.8478 29.3104 29.8454 29.6054C29.8429 29.9004 29.7278 30.1825 29.525 30.3911C29.3223 30.5997 29.0479 30.718 28.7612 30.7206C28.4744 30.7231 28.1981 30.6097 27.9918 30.4048L23.7196 26.0106C20.9278 28.4708 17.3181 29.7232 13.648 29.505C9.97779 29.2868 6.53243 27.6149 4.03485 24.8402C1.53728 22.0655 0.181639 18.4036 0.252392 14.6229C0.323145 10.8423 1.81479 7.23677 4.41433 4.56295C7.01387 1.88914 10.5192 0.354875 14.1949 0.2821C17.8705 0.209326 21.4307 1.6037 24.1283 4.17263C26.826 6.74157 28.4514 10.2854 28.6636 14.0604C28.8757 17.8354 27.6581 21.5483 25.2662 24.4198V24.4221ZM14.4687 27.2796C17.6596 27.2796 20.7198 25.9758 22.9761 23.655C25.2324 21.3343 26.4999 18.1866 26.4999 14.9046C26.4999 11.6225 25.2324 8.47489 22.9761 6.15412C20.7198 3.83336 17.6596 2.52957 14.4687 2.52957C11.2778 2.52957 8.2176 3.83336 5.96131 6.15412C3.70501 8.47489 2.43743 11.6225 2.43743 14.9046C2.43743 18.1866 3.70501 21.3343 5.96131 23.655C8.2176 25.9758 11.2778 27.2796 14.4687 27.2796Z" fill="white"/>
+								</svg>
+							</button>
+							<input type="text" class="search-input-navbar" placeholder="بتدور على ايه؟">
+						</form>
+					</div>
+					<div class="logo-navbar col-2 col-md-1 d-flex justify-content-end ps-2 ps-md-0">
+						<a class="navbar-brand" href="#">
+						<img src="./images/logoWhite.png" alt="Egennie Logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#About">عنــا</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Videos">المتاجر</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Videos">المنتجات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Contact">تواصل معنا</a>
-              </li>
-            </ul>
-            <div class="register">
-              <button class="headerBtn">تسجيل الدخول</button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+					</div>
+				</div>
+			</nav>
+			<div class="filter-bar d-flex align-items-center justify-content-center w-100 pe-0 pe-lg-3">
+				<div class="container-fluid d-flex align-items-center justify-content-center navbar-expand-lg position-relative ">
+					<div class="dropdown all-categories">
+						<button class="btn dropdown-toggle all-categories" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+							كل الفئات
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mb-2 mb-lg-0 me-5 filter-bar-items">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">عن الشركة</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">المتاجر</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">المنتجات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">الاحدث</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">الاعلى تقييما</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">التخفيضات</a>
+							</li>
+						</ul>
+					</div>
+					<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon">
+							<i class="fa-solid fa-bars"></i>
+						</span>
+					</button>
+				</div>
+			</div>
+		</header>
+
 
     <main>
       <!-- Hero Section -->
-      <section id="Hero" class="">
-        
-
+      <section id="Hero" class="hero d-flex align-items-start justify-content-center">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./images/herocarousel1.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-content d-flex align-items-center">
+								<div class="col-12 col-md-6">
+									<h3>أكبر متجر إلكتروني</h3>
+									<h4 class="mt-4">متخصص في الأزيـاء و الملابـس و الحقـائــب</h4>
+									<h5>متــجــر مــصــري 100%</h5>
+									<button>تسوق الآن</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/herocarousel2.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./images/herocarousel3.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
       </section>
 
       <!-- About Section -->
@@ -168,14 +280,11 @@
 
 
     <!-- Bootstrap Script File -->
-    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/Bootstrap/js/bootstrap.min.js"></script> -->
     <!-- FontAwesome Script File -->
     <script src="assets/FontAwesome/js/all.min.js"></script>
-    <!-- WOW JS -->
-    <script src="./assets/Animate/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+		<!-- Script file -->
+    <script src="./index.js"></script>
   </body>
 
 </html>
