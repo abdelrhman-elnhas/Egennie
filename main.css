@@ -90,7 +90,7 @@ section {
 	position: absolute;
 	content: "";
 	top: 50%;
-	left: 1.5%;
+	left: 13%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -118,6 +118,12 @@ section {
 	font-size: 11px;
 	color: var(--white);
 	font-weight: 400;
+}
+
+@media (max-width:1122px) {
+	.cart-navbar::after {
+		left: 5%;
+	}
 }
 
 @media (max-width:1080px) {
