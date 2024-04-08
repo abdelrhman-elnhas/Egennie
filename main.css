@@ -64,10 +64,6 @@ a {
 	margin: 0;
 }
 
-section {
-	min-height: 100vh;
-}
-
 /* End Global Settings */
 
 
@@ -292,9 +288,18 @@ section {
 	-o-transform: translate(-50%, -50%);
 }
 
+.carousel-item-content {
+	width: 70%;
+}
+
 .carousel-content h3 {
 	font-weight: 900;
 	font-size: 50px;
+}
+
+.carousel-content h2 {
+	font-weight: 900;
+	font-size: 70px;
 }
 
 .carousel-content h5 {
@@ -302,4 +307,364 @@ section {
 	color: var(--sec-color);
 }
 
+.hero-cta {
+	padding: 8px 15px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	color: var(--black);
+	background-color: var(--sec-color);
+	font-size: 20px;
+	font-weight: 700;
+	border: none;
+}
+
+.hero-img {
+	width: 100%;
+}
+
+.hero-img .carousel-content-img {
+	width: 400px !important;
+	height: unset;
+	object-fit: cover;
+}
+
+@media (max-width:1150px) {
+	.hero-img {
+		margin-right: -40px;
+	}
+
+	.carousel-content h2 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width:992px) {
+	.hero-img {
+		display: none !important;
+	}
+
+	.carousel-item-content {
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.carousel-item-content h3 {
+		font-size: 40px;
+	}
+
+	.carousel-item-content h4 {
+		font-size: 20px;
+	}
+
+	.carousel-content h2 {
+		font-size: 40px;
+	}
+}
+
+@media (max-width:700px) {
+	.carousel-content {
+		width: 100%;
+	}
+
+	.carousel-content h3 {
+		font-size: 30px;
+	}
+
+	.carousel-content h4 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width:500px) {
+	.carousel-item-content h3 {
+		font-size: 28px;
+	}
+
+	.carousel-item-content h4 {
+		font-size: 14px;
+	}
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	z-index: 10;
+}
+
 /* End Hero Section */
+
+/* Start Categories Section */
+#Categories {
+	background-color: var(--white);
+	padding-block: 80px;
+}
+
+.section-title-name {
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--first-color);
+}
+
+.section-title-link a {
+	text-decoration: underline;
+	color: var(--first-alt-color) !important;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.category-card {
+	background-color: var(--first-color);
+	overflow: hidden;
+	position: relative;
+	aspect-ratio: 1/1;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 4px 6px 7px 0px rgba(0, 0, 0, 0.2);
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	cursor: pointer;
+}
+
+.category-card:hover {
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+}
+
+.category-card::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: linear-gradient(to top, #092753, rgba(0, 0, 0, 0));
+	z-index: 2;
+}
+
+.category-card>img {
+	object-fit: cover;
+	width: 160%;
+	position: relative;
+	z-index: 1;
+}
+
+.category-name {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: var(--white);
+	font-size: 22px;
+	font-weight: 700;
+	z-index: 3;
+}
+
+/* End Categories Section */
+
+/* Start Advertisment Section */
+#Advertisment {
+	background-image: url("./images/herocarousel1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+}
+
+#Advertisment::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: #092753b0;
+}
+
+#Advertisment .container {
+	z-index: 12;
+	position: relative;
+}
+
+.ad-title {
+	color: var(--sec-color);
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.ad-subtitle {
+	color: var(--white);
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.ad-img {
+	height: 400px;
+	overflow: hidden;
+}
+
+.ad-img img {
+	width: 50%;
+	object-fit: cover;
+}
+
+@media (max-width:1199px) {
+	.ad-img img {
+		width: 60%;
+	}
+}
+
+@media (max-width:992px) {
+	.ad-img img {
+		width: 100%;
+	}
+}
+
+/* End Advertisment Section */
+
+/* Start Offers Section */
+.card-wrapper {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.img-container>img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.card-wrapper .fav-icon {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	background-color: #0927531a;
+	padding: 10px 15px;
+	border-radius: 100px;
+	transition: 300ms;
+}
+
+.card-wrapper .fav-icon:hover {
+	background-color: var(--first-alt-color);
+	cursor: pointer;
+
+	.fa-heart {
+		color: var(--white);
+	}
+}
+
+.card-wrapper .fav-icon.active {
+	background-color: var(--first-alt-color);
+	cursor: pointer;
+
+	.fa-heart {
+		color: var(--white);
+	}
+}
+
+.seller {
+	color: var(--first-alt-color);
+}
+
+.seller-name {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.prod-name {
+	font-size: 1rem;
+	font-weight: 600;
+	height: 75px;
+}
+
+.price .current {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--sec-color);
+}
+
+.price .offer {
+	color: var(--sec-color);
+	text-decoration: line-through;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.rating {
+	color: var(--first-alt-color);
+	margin-top: -30px;
+}
+
+.rating .fa-star:not(.checked) {
+	opacity: 0.3;
+}
+
+@media (max-width:767px) {
+	.prodlist-main .row {
+		gap: 10px;
+	}
+
+	.prodlist-main .products {
+		justify-content: center;
+	}
+}
+
+/* End Offers Section */
+
+
+
+/* Start Footer Settings */
+#Footer {
+	background-color: var(--first-color);
+}
+
+#Footer h6 {
+	margin-bottom: 15px;
+	color: var(--sec-color);
+	font-size: 18px;
+}
+
+.links a,
+.footer-links {
+	color: var(--white);
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.links a:hover,
+.footer-links:hover {
+	color: var(--sec-color) !important;
+	padding-right: 10px;
+}
+
+.footerTop {
+	background-color: var(--first-color);
+}
+
+.footerBottom {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+/* End footer Settings */
