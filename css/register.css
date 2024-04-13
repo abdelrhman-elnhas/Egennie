@@ -1,0 +1,135 @@
+.box-area {
+	width: 1000px;
+}
+
+.box-area input:focus,
+.box-area input:active {
+	box-shadow: none;
+}
+
+
+.left-box {
+	background-color: var(--first-color);
+}
+
+.right-box {
+	padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+	font-size: 16px;
+}
+
+.auth-btn {
+	background-color: var(--first-color);
+	color: var(--white);
+}
+
+.rounded-4 {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.rounded-5 {
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+	.box-area {
+		margin: 0 10px;
+	}
+
+	.left-box {
+		/* height: 100px; */
+		overflow: hidden;
+	}
+
+	.right-box {
+		padding: 20px;
+	}
+}
+
+
+.account-type {
+	display: flex;
+	height: 100px;
+	width: 400px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0px;
+	gap: 10px;
+}
+
+.account-type .option {
+	background: var(--white);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0 10px;
+	border: 2px solid lightgrey;
+	transition: all 0.3s ease;
+}
+
+.account-type .option .dot {
+	height: 20px;
+	width: 20px;
+	background: #d9d9d9;
+	border-radius: 50%;
+	position: relative;
+}
+
+.account-type .option .dot::before {
+	position: absolute;
+	content: "";
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	background: var(--first-color);
+	border-radius: 50%;
+	opacity: 0;
+	transform: scale(1.5);
+	transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2 {
+	border-color: var(--first-color);
+	background: var(--first-color);
+}
+
+#option-1:checked:checked~.option-1 .dot,
+#option-2:checked:checked~.option-2 .dot {
+	background: var(--white);
+}
+
+#option-1:checked:checked~.option-1 .dot::before,
+#option-2:checked:checked~.option-2 .dot::before {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.wrapper .option span {
+	font-size: 20px;
+	color: #808080;
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span {
+	color: var(--white);
+}

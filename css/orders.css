@@ -1,0 +1,5 @@
+.gradient-custom {
+	background: var(--first-color);
+	background: -webkit-linear-gradient(to top left, var(--first-color), var(--white));
+	background: linear-gradient(to top left, var(--first-color), var(--white))
+}

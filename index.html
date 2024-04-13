@@ -20,10 +20,11 @@
     <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="./assets/Animate/css/animate.css" />
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="assets/SwiperJS/css/swiper-bundle.min.css" />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
 
   <body>
@@ -38,9 +39,9 @@
           class="container-fluid d-flex align-items-center justify-content-end gap-4"
         >
           <ul class="d-flex justify-content-center align-items-center gap-4">
-            <li>خليك تاجر</li>
-            <li>تواصل معنا</li>
-            <li>سياسة الاستبدال و الاسترجاع</li>
+            <li><a href="auth.html">خليك تاجر</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="policy.html">سياسة الاستبدال و الاسترجاع</a></li>
           </ul>
         </div>
       </div>
@@ -52,6 +53,7 @@
         >
           <div
             class="cart-navbar col-1 col-md-2 d-flex align-items-center gap-2 position-relative"
+            onclick="window.location.href='cart.html'"
           >
             <svg
               width="37"
@@ -95,6 +97,7 @@
           </div>
           <div
             class="user-navbar col-1 col-md-2 d-flex align-items-center gap-2"
+            onclick="window.location.href='auth.html'"
           >
             <svg
               width="38"
@@ -159,7 +162,7 @@
           <div
             class="logo-navbar col-2 col-md-1 d-flex justify-content-end ps-2 ps-md-0"
           >
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="./images/logoWhite.png" alt="Egennie Logo" />
             </a>
           </div>
@@ -182,26 +185,39 @@
               كل الفئات
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item text-end" href="#">الملابس الرجالي</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-end" href="#">الملابس الحريمي</a>
+              </li>
+              <li><a class="dropdown-item text-end" href="#">الأحذية</a></li>
             </ul>
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 me-5 filter-bar-items">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >الرئيسية</a
                 >
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">عن الشركة</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="stores.html"
+                  >المتاجر</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">المتاجر</a>
+                <a class="nav-link" aria-current="page" href="products.html"
+                  >المنتجات</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">المنتجات</a>
+                <a class="nav-link" aria-current="page" href="offers.html"
+                  >العروض</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">الاحدث</a>
@@ -210,9 +226,6 @@
                 <a class="nav-link" aria-current="page" href="#"
                   >الاعلى تقييما</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">التخفيضات</a>
               </li>
             </ul>
           </div>
@@ -284,7 +297,12 @@
                     متخصص في الأزيـاء و الملابـس و الحقـائــب
                   </h4>
                   <h5>متــجــر مــصــري 100%</h5>
-                  <button class="hero-cta mt-3">تسوق الآن</button>
+                  <button
+                    class="hero-cta mt-3"
+                    onclick="window.location.href='products.html'"
+                  >
+                    تسوق الآن
+                  </button>
                 </div>
                 <div class="hero-img col-12 col-md-6 d-flex align-items-end">
                   <img
@@ -313,7 +331,12 @@
               >
                 <h2>اشـتــري و بـيــع</h2>
                 <h4 class="mt-4">من مكــان واحـــد بضـغــطــة واحـــدة</h4>
-                <button class="hero-cta mt-3 px-5">ابدأ الآن</button>
+                <button
+                  class="hero-cta mt-3 px-5"
+                  onclick="window.location.href='auth.html'"
+                >
+                  ابدأ الآن
+                </button>
               </div>
             </div>
           </div>
@@ -350,13 +373,18 @@
             class="section-title d-flex align-items-center justify-content-between w-100"
           >
             <p class="section-title-name">تسوق حسب القسم</p>
-            <p class="section-title-link"><a href="">عرض كل الأقسام</a></p>
+            <p class="section-title-link">
+              <a href="categories.html">عرض كل الأقسام</a>
+            </p>
           </div>
           <div
             class="category-items-wrapper d-flex justify-content-center align-items-center flex-wrap"
           >
             <div class="col-6 col-md-3 p-2">
-              <div class="category-card">
+              <div
+                class="category-card"
+                onclick="window.location.href='products.html'"
+              >
                 <img src="./images/cat1.jpg" alt="" />
                 <p class="category-name">الملابس الرجالي</p>
               </div>
@@ -415,7 +443,9 @@
           <div class="col-12 col-md-6 py-5 text-center text-md-end">
             <p class="ad-title">عايز تبيع كل منتجاتك و تستلم فلوسك</p>
             <p class="ad-subtitle">و انت قاعد في مكانك و من غير أي مجهود</p>
-            <button class="hero-cta">سجل حساب تاجر الآن</button>
+            <button class="hero-cta" onclick="window.location.href='auth.html'">
+              سجل حساب تاجر الآن
+            </button>
           </div>
           <div
             class="col-12 col-md-6 px-2 ad-img d-none d-md-flex justify-content-end align-items-center"
@@ -425,7 +455,7 @@
         </div>
       </section>
 
-      <!-- Videos Section -->
+      <!-- Offers Section -->
       <section id="Offers" class="my-5">
         <div
           class="container flex-column d-flex justify-content-center align-items-center"
@@ -434,14 +464,17 @@
             class="section-title d-flex align-items-center justify-content-between w-100"
           >
             <div class="section-title-name">عــروض اليــوم</div>
-            <div class="section-title-link"><a href="">عرض كل العروض</a></div>
+            <div class="section-title-link">
+              <a href="offers.html">عرض كل العروض</a>
+            </div>
           </div>
           <div
             class="offers-container d-flex justify-content-start align-items-center flex-wrap"
           >
-            <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="col-12 col-sm-6 col-lg-3 p-3">
               <div
                 class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                onclick="window.location.href='productDetails.html'"
               >
                 <div class="img-container">
                   <img src="./images/crossbag.jpg" alt="" />
@@ -474,9 +507,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="col-12 col-sm-6 col-lg-3 p-3">
               <div
                 class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                onclick="window.location.href='productDetails.html'"
               >
                 <div class="img-container">
                   <img src="./images/crossbag.jpg" alt="" />
@@ -509,9 +543,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="col-12 col-sm-6 col-lg-3 p-3">
               <div
                 class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                onclick="window.location.href='productDetails.html'"
               >
                 <div class="img-container">
                   <img src="./images/crossbag.jpg" alt="" />
@@ -544,9 +579,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="col-12 col-sm-6 col-lg-3 p-3">
               <div
                 class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                onclick="window.location.href='productDetails.html'"
               >
                 <div class="img-container">
                   <img src="./images/crossbag.jpg" alt="" />
@@ -579,9 +615,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="col-12 col-sm-6 col-lg-3 p-3">
               <div
                 class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                onclick="window.location.href='productDetails.html'"
               >
                 <div class="img-container">
                   <img src="./images/crossbag.jpg" alt="" />
@@ -614,79 +651,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="col-12 col-sm-6 col-lg-3 p-3">
               <div
                 class="card-wrapper d-flex flex-column gap-2 align-items-start"
-              >
-                <div class="img-container">
-                  <img src="./images/crossbag.jpg" alt="" />
-                  <div class="fav-icon">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <div
-                  class="prod-details d-flex flex-column align-items-end"
-                  style="gap: 5px"
-                >
-                  <div class="seller d-flex gap-2 align-items-center">
-                    <span class="seller-name text-start">Elite Store</span>
-                    <i class="fa-solid fa-shield"></i>
-                  </div>
-                  <span class="prod-name">
-                    حقيبة كروس جلد كاجوال للرجال - بني 1065
-                  </span>
-                  <div class="rating w-100">
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div class="price d-flex gap-2 align-items-center w-100">
-                    <span class="current">1100جم</span>
-                    <span class="offer">725جم</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
-              <div
-                class="card-wrapper d-flex flex-column gap-2 align-items-start"
-              >
-                <div class="img-container">
-                  <img src="./images/crossbag.jpg" alt="" />
-                  <div class="fav-icon">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <div
-                  class="prod-details d-flex flex-column align-items-end"
-                  style="gap: 5px"
-                >
-                  <div class="seller d-flex gap-2 align-items-center">
-                    <span class="seller-name text-start">Elite Store</span>
-                    <i class="fa-solid fa-shield"></i>
-                  </div>
-                  <span class="prod-name">
-                    حقيبة كروس جلد كاجوال للرجال - بني 1065
-                  </span>
-                  <div class="rating w-100">
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star checked"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div class="price d-flex gap-2 align-items-center w-100">
-                    <span class="current">1100جم</span>
-                    <span class="offer">725جم</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
-              <div
-                class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                onclick="window.location.href='productDetails.html'"
               >
                 <div class="img-container">
                   <img src="./images/crossbag.jpg" alt="" />
@@ -723,36 +691,509 @@
         </div>
       </section>
 
-      <!-- <div class="shop-method-area section-padding30">
+      <!-- Trending Products Section -->
+      <section class="trendingProducts">
+        <div
+          class="section-title container d-flex align-items-center justify-content-between w-100"
+        >
+          <div class="section-title-name">أحدث المنتجات</div>
+          <div class="section-title-link"><a href="">عرض المزيد</a></div>
+        </div>
+        <div class="container swiper">
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                >
+                  <div class="img-container">
+                    <img src="./images/crossbag.jpg" alt="" />
+                    <div class="fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="prod-details d-flex flex-column align-items-end"
+                    style="gap: 5px"
+                  >
+                    <div class="seller d-flex gap-2 align-items-center">
+                      <span class="seller-name text-start">Elite Store</span>
+                      <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <span class="prod-name">
+                      حقيبة كروس جلد كاجوال للرجال - بني 1065
+                    </span>
+                    <div class="rating w-100">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price d-flex gap-2 align-items-center w-100">
+                      <span class="current">1100جم</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                >
+                  <div class="img-container">
+                    <img src="./images/crossbag.jpg" alt="" />
+                    <div class="fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="prod-details d-flex flex-column align-items-end"
+                    style="gap: 5px"
+                  >
+                    <div class="seller d-flex gap-2 align-items-center">
+                      <span class="seller-name text-start">Elite Store</span>
+                      <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <span class="prod-name">
+                      حقيبة كروس جلد كاجوال للرجال - بني 1065
+                    </span>
+                    <div class="rating w-100">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price d-flex gap-2 align-items-center w-100">
+                      <span class="current">1100جم</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                >
+                  <div class="img-container">
+                    <img src="./images/crossbag.jpg" alt="" />
+                    <div class="fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="prod-details d-flex flex-column align-items-end"
+                    style="gap: 5px"
+                  >
+                    <div class="seller d-flex gap-2 align-items-center">
+                      <span class="seller-name text-start">Elite Store</span>
+                      <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <span class="prod-name">
+                      حقيبة كروس جلد كاجوال للرجال - بني 1065
+                    </span>
+                    <div class="rating w-100">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price d-flex gap-2 align-items-center w-100">
+                      <span class="current">1100جم</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                >
+                  <div class="img-container">
+                    <img src="./images/crossbag.jpg" alt="" />
+                    <div class="fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="prod-details d-flex flex-column align-items-end"
+                    style="gap: 5px"
+                  >
+                    <div class="seller d-flex gap-2 align-items-center">
+                      <span class="seller-name text-start">Elite Store</span>
+                      <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <span class="prod-name">
+                      حقيبة كروس جلد كاجوال للرجال - بني 1065
+                    </span>
+                    <div class="rating w-100">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price d-flex gap-2 align-items-center w-100">
+                      <span class="current">1100جم</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="card-wrapper d-flex flex-column gap-2 align-items-start"
+                >
+                  <div class="img-container">
+                    <img src="./images/crossbag.jpg" alt="" />
+                    <div class="fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="prod-details d-flex flex-column align-items-end"
+                    style="gap: 5px"
+                  >
+                    <div class="seller d-flex gap-2 align-items-center">
+                      <span class="seller-name text-start">Elite Store</span>
+                      <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <span class="prod-name">
+                      حقيبة كروس جلد كاجوال للرجال - بني 1065
+                    </span>
+                    <div class="rating w-100">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price d-flex gap-2 align-items-center w-100">
+                      <span class="current">1100جم</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Advertisment Two Section -->
+      <section id="Advertisment-Two" class="mt-5">
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-between align-items-center"
+        >
+          <div class="col-12 col-lg-4 py-5 text-center text-lg-end">
+            <p class="ad-title">التجار الأكثر طلبا</p>
+            <p class="ad-subtitle">تسوق الآن من عروضهم الحصرية لهذا الأسبوع</p>
+          </div>
+          <div
+            class="col-12 col-lg-8 px-2 py-3 d-flex justify-content-center align-items-center gap-3"
+          >
+            <div class="container swiper">
+              <div class="slide-container-two">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="seller-card d-flex flex-column align-items-end">
+                      <div class="img-container">
+                        <img
+                          src="images/cat7.jpg"
+                          alt=""
+                          style="object-fit: cover; width: 100%; height: 100%"
+                        />
+                        <img src="images/cat1.jpg" alt="" class="seller-pic" />
+                      </div>
+                      <div
+                        class="card-details d-flex flex-column align-items-end"
+                        style="gap: 5px"
+                      >
+                        <div
+                          class="seller d-flex gap-2 align-items-center mt-5"
+                        >
+                          <span class="seller-name text-start"
+                            >Elite Store</span
+                          >
+                          <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="seller-categories">
+                          <a href="">حقائب</a>
+                          <a href="">أحذيه</a>
+                          <a href="">ملابس</a>
+                        </span>
+                        <div class="rating w-100 mb-5">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="seller-card d-flex flex-column align-items-end">
+                      <div class="img-container">
+                        <img
+                          src="images/cat7.jpg"
+                          alt=""
+                          style="object-fit: cover; width: 100%; height: 100%"
+                        />
+                        <img src="images/cat1.jpg" alt="" class="seller-pic" />
+                      </div>
+                      <div
+                        class="card-details d-flex flex-column align-items-end"
+                        style="gap: 5px"
+                      >
+                        <div
+                          class="seller d-flex gap-2 align-items-center mt-5"
+                        >
+                          <span class="seller-name text-start"
+                            >Elite Store</span
+                          >
+                          <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="seller-categories">
+                          <a href="">حقائب</a>
+                          <a href="">أحذيه</a>
+                          <a href="">ملابس</a>
+                        </span>
+                        <div class="rating w-100 mb-5">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="seller-card d-flex flex-column align-items-end">
+                      <div class="img-container">
+                        <img
+                          src="images/cat7.jpg"
+                          alt=""
+                          style="object-fit: cover; width: 100%; height: 100%"
+                        />
+                        <img src="images/cat1.jpg" alt="" class="seller-pic" />
+                      </div>
+                      <div
+                        class="card-details d-flex flex-column align-items-end"
+                        style="gap: 5px"
+                      >
+                        <div
+                          class="seller d-flex gap-2 align-items-center mt-5"
+                        >
+                          <span class="seller-name text-start"
+                            >Elite Store</span
+                          >
+                          <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="seller-categories">
+                          <a href="">حقائب</a>
+                          <a href="">أحذيه</a>
+                          <a href="">ملابس</a>
+                        </span>
+                        <div class="rating w-100 mb-5">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="seller-card d-flex flex-column align-items-end">
+                      <div class="img-container">
+                        <img
+                          src="images/cat7.jpg"
+                          alt=""
+                          style="object-fit: cover; width: 100%; height: 100%"
+                        />
+                        <img src="images/cat1.jpg" alt="" class="seller-pic" />
+                      </div>
+                      <div
+                        class="card-details d-flex flex-column align-items-end"
+                        style="gap: 5px"
+                      >
+                        <div
+                          class="seller d-flex gap-2 align-items-center mt-5"
+                        >
+                          <span class="seller-name text-start"
+                            >Elite Store</span
+                          >
+                          <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="seller-categories">
+                          <a href="">حقائب</a>
+                          <a href="">أحذيه</a>
+                          <a href="">ملابس</a>
+                        </span>
+                        <div class="rating w-100 mb-5">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="seller-card d-flex flex-column align-items-end">
+                      <div class="img-container">
+                        <img
+                          src="images/cat7.jpg"
+                          alt=""
+                          style="object-fit: cover; width: 100%; height: 100%"
+                        />
+                        <img src="images/cat1.jpg" alt="" class="seller-pic" />
+                      </div>
+                      <div
+                        class="card-details d-flex flex-column align-items-end"
+                        style="gap: 5px"
+                      >
+                        <div
+                          class="seller d-flex gap-2 align-items-center mt-5"
+                        >
+                          <span class="seller-name text-start"
+                            >Elite Store</span
+                          >
+                          <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="seller-categories">
+                          <a href="">حقائب</a>
+                          <a href="">أحذيه</a>
+                          <a href="">ملابس</a>
+                        </span>
+                        <div class="rating w-100 mb-5">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-two-next swiper-navBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="swiper-button-two-prev swiper-navBtn">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper-pagination-two"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="Contact" class="contact-page-section">
         <div class="container">
-          <div class="row d-flex justify-content-between">
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="single-method mb-40">
-                <i class="ti-package"></i>
-                <h6>Free Shipping Method</h6>
-                <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+          <div class="sec-title">
+            <div class="title">تواصل معنا</div>
+            <h2>هل لديك أى استفسار ؟ تواصل معنا</h2>
+          </div>
+          <div class="inner-container">
+            <div class="row clearfix">
+              <!--Form Column-->
+              <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                <div class="inner-column">
+                  <!--Contact Form-->
+                  <div class="contact-form">
+                    <form
+                      method="post"
+                      action="sendemail.php"
+                      id="contact-form"
+                    >
+                      <div class="row clearfix">
+                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                          <input
+                            type="text"
+                            name="name"
+                            value=""
+                            placeholder="الأسم"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                          <input
+                            type="email"
+                            name="email"
+                            value=""
+                            placeholder="البريد الألكترونى "
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                          <input
+                            type="text"
+                            name="subject"
+                            value=""
+                            placeholder="الموضوع"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                          <input
+                            type="text"
+                            name="phone"
+                            value=""
+                            placeholder="الهاتف المحمول"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                          <textarea
+                            name="message"
+                            placeholder="الرسالة"
+                          ></textarea>
+                        </div>
+                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                          <button type="submit" class="theme-btn btn-style-one">
+                            ارسل الأن
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--End Contact Form-->
+                </div>
               </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="single-method mb-40">
-                <i class="ti-unlock"></i>
-                <h6>Secure Payment System</h6>
-                <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="single-method mb-40">
-                <i class="ti-reload"></i>
-                <h6>Secure Payment System</h6>
-                <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+
+              <!--Info Column-->
+              <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                <div class="inner-column">
+                  <h2>بيانات التواصل</h2>
+                  <ul class="list-info">
+                    <li><i class="fas fa-globe"></i> القاهرة ، مصر</li>
+                    <li>
+                      <i class="far fa-envelope ms-1"></i>info@egennie.com
+                    </li>
+                    <li><i class="fas fa-phone"></i> 01127698622</li>
+                  </ul>
+                  <ul class="social-icon-four">
+                    <li class="follow">تابعنا على :</li>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
-
-      <!-- Contact Section -->
-      <section id="Contact" class=""></section>
+      </section>
     </main>
 
     <!-- Footer Section -->
@@ -830,10 +1271,13 @@
     </footer>
 
     <!-- Bootstrap Script File -->
-    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- FontAwesome Script File -->
     <script src="assets/FontAwesome/js/all.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/SwiperJS/js/swiper-bundle.min.js"></script>
+
     <!-- Script file -->
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
