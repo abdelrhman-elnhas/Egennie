@@ -5,6 +5,24 @@
 	border-color: var(--first-color);
 }
 
+.add-address {
+	background-color: #d4d4d4;
+	width: 35px;
+	height: 35px;
+	color: var(--black);
+	border-radius: 5px;
+	font-weight: 900;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	padding-bottom: 5px;
+}
+
 .checkout-btns>button {
 	border-radius: 5px;
 	-webkit-border-radius: 5px;

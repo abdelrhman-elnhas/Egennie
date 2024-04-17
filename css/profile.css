@@ -1,9 +1,9 @@
-.aud img {
+/* .aud img {
 	width: 104%;
 	height: 499px;
 	position: relative;
 	bottom: 12%;
-}
+} */
 
 .linkedin-container {
 	margin: auto;
@@ -15,6 +15,20 @@
 	font-weight: 700;
 	background-color: var(--first-color);
 	margin-top: 60px;
+}
+
+.profile-image-wrapper {
+	background-color: var(--first-color);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
 }
 
 
